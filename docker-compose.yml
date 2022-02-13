@@ -1,0 +1,31 @@
+version: '3'
+services:
+  postgresql:
+    image: postgres:9.4
+    restart: always
+    networks:
+      - spring-boot-postgresql-network
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=COFFEE_SHOP
+    ports:
+      - '5432:5432'
+  coffee-shop:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - spring-boot-postgresql-network
+    depends_on:
+      - postgresql
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/COFFEE_SHOP
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=password
+networks:
+  spring-boot-postgresql-network:
+    driver: bridge

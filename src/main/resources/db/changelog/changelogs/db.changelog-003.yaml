@@ -1,0 +1,159 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-003.yaml
+  - changeSet:
+      id: "insert_list_images"
+      author: arsenii_kuteynitsyn
+      changes:
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/1.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=1
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/2.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=2
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/3.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=3
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/4.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=4
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/5.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=5
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/6.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=6
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/7.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=7
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/8.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=8
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/9.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=9
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/10.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=10
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/11.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=11
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/12.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=12
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/13.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=13
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/14.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=14
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/15.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=15
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/16.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=16
+        - update:
+            columns:
+              - column:
+                  name: CONTENT
+                  valueBlobFile: ../images/list/17.jpg
+            schemaName: COFFEE_SHOP
+            tableName: IMAGE
+            relativeToChangelogFile: true
+            where: id=17

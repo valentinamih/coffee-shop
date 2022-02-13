@@ -1,0 +1,119 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-001.yaml
+  - changeSet:
+      id: "create_schema"
+      author: arsenii_kuteynitsyn
+      changes:
+        - createTable:
+            tableName: COLOR
+            schemaName: COFFEE_SHOP
+            columns:
+              - column:
+                  name: CODE
+                  type: varchar(50)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: NAME
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: CATEGORY
+            schemaName: COFFEE_SHOP
+            columns:
+              - column:
+                  name: NAME
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: CODE
+                  type: varchar(50)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+        - createTable:
+            tableName: PROPERTIES
+            schemaName: COFFEE_SHOP
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: VALUE
+                  type: jsonb
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: PRODUCT
+            schemaName: COFFEE_SHOP
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: NAME
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DESCRIPTION
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: COLOR_CODE
+                  type: varchar(50)
+                  constraints:
+                    foreignKeyName: fk_product_color
+                    references: COFFEE_SHOP.COLOR(CODE)
+              - column:
+                  name: PRICE
+                  type: decimal(20, 2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: CATEGORY_CODE
+                  type: varchar(50)
+                  constraints:
+                    foreignKeyName: fk_product_category
+                    references: COFFEE_SHOP.CATEGORY(CODE)
+        - createTable:
+            tableName: IMAGE
+            schemaName: COFFEE_SHOP
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: CONTENT
+                  type: LONGBLOB
+              - column:
+                  name: TYPE
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DESTINATION
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: PRODUCT_ID
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_image_product
+                    references: COFFEE_SHOP.PRODUCT(ID)
