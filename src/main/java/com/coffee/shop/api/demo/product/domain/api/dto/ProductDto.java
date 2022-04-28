@@ -17,5 +17,6 @@ public class ProductDto {
     private String categoryName;
     private String categoryCode;
     private Map<String, String> propertiesValue;
-    private List<ImageDto> images;
+    private List<ImageDto> listImages;
+    private List<ImageDto> cardImages;
 }

@@ -30,7 +30,7 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
             }
             if (filter.getCategoryCode() != null) {
                 predicates.add(
-                    cb.equal(product.get("category"), filter.getCategoryCode()));
+                    cb.equal(product.get("category").get("code"), filter.getCategoryCode()));
             }
             return cb.and(predicates.toArray(new Predicate[0]));
         };

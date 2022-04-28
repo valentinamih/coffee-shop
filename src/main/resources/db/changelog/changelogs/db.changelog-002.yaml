@@ -100,27 +100,3 @@ databaseChangeLog:
               separator: ';'
               tableName: PROPERTIES
               usePreparedStatements: false
-        - loadData:
-            catalogName: COFFEE_SHOP
-            columns:
-              - column:
-                  header: ID
-                  name: ID
-                  type: BIGINT
-              - column:
-                  header: TYPE
-                  name: TYPE
-                  type: VARCHAR(50)
-              - column:
-                  header: PRODUCT_ID
-                  name: PRODUCT_ID
-                  type: BIGINT
-            commentLineStartsWith: //
-            encoding: UTF-8
-            file: ../csv/image_001.csv
-            quotchar: '"'
-            relativeToChangelogFile: true
-            schemaName: COFFEE_SHOP
-            separator: ','
-            tableName: IMAGE
-            usePreparedStatements: false

@@ -17,6 +17,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.BatchSize;
+import org.hibernate.annotations.Where;
 
 @Entity
 @Data
@@ -28,17 +29,23 @@ public class Product {
     private String name;
     private String description;
     @JoinColumn
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Color color;
     private BigDecimal price;
     @JoinColumn
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Category category;
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @PrimaryKeyJoinColumn
     private Properties properties;
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     @BatchSize(size = 25)
-    private List<Image> images;
+    @Where(clause = "DESTINATION = 'LIST'")
+    private List<Image> listImages;
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "product_id")
+    @BatchSize(size = 25)
+    @Where(clause = "DESTINATION = 'CARD'")
+    private List<Image> cardImages;
 }

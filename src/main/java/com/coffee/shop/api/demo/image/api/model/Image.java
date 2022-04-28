@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 @Entity
 @Data
@@ -17,6 +18,7 @@ public class Image {
     private String type;
     @Lob
     @Column(columnDefinition = "BLOB")
+    @Type(type = "org.hibernate.type.BinaryType")
     private byte[] content;
     private String destination;
 }

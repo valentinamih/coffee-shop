@@ -4,156 +4,292 @@ databaseChangeLog:
       id: "insert_list_images"
       author: arsenii_kuteynitsyn
       changes:
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 1
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/1.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=1
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 2
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/2.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=2
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 3
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/3.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=3
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 4
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/4.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=4
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 5
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/5.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=5
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 6
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/6.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=6
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 7
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/7.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=7
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 8
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/8.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=8
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 9
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/9.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=9
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 10
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/10.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=10
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 11
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/11.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=11
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 12
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/12.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=12
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 13
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/13.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=13
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 14
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/14.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=14
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 15
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/15.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=15
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 16
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/16.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=16
-        - update:
+        - insert:
             columns:
+              - column:
+                  name: PRODUCT_ID
+                  valueNumeric: 17
+              - column:
+                  name: DESTINATION
+                  value: LIST
+              - column:
+                  name: TYPE
+                  value: image/jpg
               - column:
                   name: CONTENT
                   valueBlobFile: ../images/list/17.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
-            where: id=17
