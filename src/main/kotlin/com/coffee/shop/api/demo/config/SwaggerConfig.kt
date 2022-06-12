@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 
 @Configuration
 @EnableSwagger2
-class SwaggerConfig {
+open class SwaggerConfig {
     private fun metadata(): ApiInfo {
         return ApiInfoBuilder()
             .version("1.0.0")
@@ -19,7 +19,7 @@ class SwaggerConfig {
     }
 
     @Bean
-    fun customImplementation(): Docket {
+    open fun customImplementation(): Docket {
         return Docket(DocumentationType.SWAGGER_2)
             .select()
             .apis(RequestHandlerSelectors.basePackage("com.coffee.shop.api.demo"))
