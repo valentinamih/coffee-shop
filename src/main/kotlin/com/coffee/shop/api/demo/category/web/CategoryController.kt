@@ -13,16 +13,17 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/categories")
 @RequiredArgsConstructor
 @Api(value = "Categories view")
-class CategoryController {
-    private val categoryService: CategoryService? = null
+class CategoryController(
+    private val categoryService: CategoryService
+) {
 
     @GetMapping
-    fun findAll(): List<CategoryDto?>? {
-        return categoryService!!.filter()
+    fun findAll(): List<CategoryDto?> {
+        return categoryService.filter()
     }
 
     @GetMapping("/{categoryCode}")
     fun findOne(@PathVariable categoryCode: String): CategoryDto? {
-        return categoryService!!.findOne(categoryCode)
+        return categoryService.findOne(categoryCode)
     }
 }

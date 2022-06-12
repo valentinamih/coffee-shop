@@ -12,16 +12,17 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/products")
 @RequiredArgsConstructor
 @Api(value = "Products view")
-class ProductController {
-    private val productService: ProductService? = null
+class ProductController(
+    private val productService: ProductService
+) {
 
     @PostMapping("/filter")
-    fun find(@RequestBody filter: ProductFilter): Page<ProductDto?>? {
-        return productService!!.filter(filter)
+    fun find(@RequestBody filter: ProductFilter): Page<ProductDto?> {
+        return productService.filter(filter)
     }
 
     @GetMapping("/{productId}")
     fun findOne(@PathVariable productId: Long): ProductDto? {
-        return productService!!.findOne(productId)
+        return productService.findOne(productId)
     }
 }
