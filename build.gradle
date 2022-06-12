@@ -9,7 +9,7 @@ plugins {
 group = 'com.coffee.shop.api'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
-
+apply plugin: 'kotlin-kapt'
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -42,11 +42,11 @@ dependencies {
 	implementation 'org.jetbrains.kotlin:kotlin-reflect:1.7.0'
 	compileOnly 'org.projectlombok:lombok'
 	compileOnly "org.mapstruct:mapstruct:${mapstructVersion}"
-	annotationProcessor 'org.projectlombok:lombok'
 	annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+	kapt "org.springframework.boot:spring-boot-configuration-processor:2.6.3"
 }
 
 tasks.named('test') {

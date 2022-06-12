@@ -4,14 +4,12 @@ import com.coffee.shop.api.demo.product.domain.api.ProductService
 import com.coffee.shop.api.demo.product.domain.api.dto.ProductDto
 import com.coffee.shop.api.demo.product.domain.api.dto.ProductFilter
 import com.coffee.shop.api.demo.product.domain.api.model.Product
-import lombok.RequiredArgsConstructor
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 @Service
-@RequiredArgsConstructor
 open class ProductServiceImpl(
     private val productRepository: ProductRepository,
     private val mapper: ProductMapper

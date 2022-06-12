@@ -6,14 +6,14 @@ import java.math.BigDecimal
 
 @Data
 class ProductDto {
-    private val id: Long? = null
-    private val name: String? = null
-    private val description: String? = null
-    private val colorCode: String? = null
-    private val price: BigDecimal? = null
-    private val categoryName: String? = null
-    private val categoryCode: String? = null
-    private val propertiesValue: Map<String, String>? = null
-    private val listImages: List<ImageDto>? = null
-    private val cardImages: List<ImageDto>? = null
+    var id: Long? = null
+    var name: String? = null
+    var description: String? = null
+    var colorCode: String? = null
+    var price: BigDecimal? = null
+    var categoryName: String? = null
+    var categoryCode: String? = null
+    var propertiesValue: Map<String, String>? = null
+    var listImages: List<ImageDto>? = null
+    var cardImages: List<ImageDto>? = null
 }

@@ -10,6 +10,6 @@ import javax.persistence.Id
 @NoArgsConstructor
 class Color {
     @Id
-    private val code: String? = null
-    private val name: String? = null
+    var code: String? = null
+    var name: String? = null
 }

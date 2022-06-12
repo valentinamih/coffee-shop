@@ -15,8 +15,8 @@ import javax.persistence.Id
 @TypeDef(name = "jsonb", typeClass = JsonBinaryType::class)
 class Properties {
     @Id
-    private val id: Long? = null
+    var id: Long? = null
 
     @Convert(converter = HashMapConverter::class)
-    private val value: Map<String, String>? = HashMap()
+    var value: Map<String, String>? = HashMap()
 }

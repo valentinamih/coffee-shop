@@ -5,10 +5,10 @@ import java.math.BigDecimal
 
 @Data
 class ProductFilter {
-    val priceFrom: BigDecimal? = null
-    val priceTo: BigDecimal? = null
-    val productName: String? = null
-    val categoryCode: String? = null
-    val pageNumber = 0
-    val pageSize = 0
+    var priceFrom: BigDecimal? = null
+    var priceTo: BigDecimal? = null
+    var productName: String? = null
+    var categoryCode: String? = null
+    var pageNumber = 0
+    var pageSize = 0
 }

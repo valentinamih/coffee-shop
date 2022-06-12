@@ -4,6 +4,6 @@ import lombok.Data
 
 @Data
 class CategoryDto {
-    private val name: String? = null
-    private val code: String? = null
+    var name: String? = null
+    var code: String? = null
 }
