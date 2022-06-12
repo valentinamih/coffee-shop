@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:8-jdk-alpine
 COPY ./ ./
 RUN sh gradlew --no-daemon bootJar
 EXPOSE 8080
