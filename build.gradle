@@ -61,3 +61,7 @@ compileTestKotlin {
 		jvmTarget = "1.8"
 	}
 }
+
+tasks.named("jar") {
+	enabled = false
+}
