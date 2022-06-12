@@ -11,6 +11,6 @@ build:
     web: Dockerfile
   config:
     SPRING_PROFILES_ACTIVE: prod
-    SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql:5432/COFFEE_SHOP
+    SPRING_DATASOURCE_URL: jdbc:postgresql://heroku-postgresql:5432/COFFEE_SHOP
     SPRING_DATASOURCE_USERNAME: user
     SPRING_DATASOURCE_PASSWORD: password
