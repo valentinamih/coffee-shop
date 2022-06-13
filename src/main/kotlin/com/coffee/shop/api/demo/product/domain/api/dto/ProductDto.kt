@@ -1,6 +1,5 @@
 package com.coffee.shop.api.demo.product.domain.api.dto
 
-import com.coffee.shop.api.demo.image.api.dto.ImageDto
 import lombok.Data
 import java.math.BigDecimal
 
@@ -14,6 +13,4 @@ class ProductDto {
     var categoryName: String? = null
     var categoryCode: String? = null
     var propertiesValue: Map<String, String>? = null
-    var listImages: List<ImageDto>? = null
-    var cardImages: List<ImageDto>? = null
 }
