@@ -99,9 +99,6 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: CONTENT
-                  type: LONGBLOB
-              - column:
                   name: TYPE
                   type: VARCHAR(50)
                   constraints:

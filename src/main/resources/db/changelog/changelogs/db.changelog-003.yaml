@@ -15,9 +15,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/1.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -32,9 +29,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/2.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -49,9 +43,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/3.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -66,9 +57,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/4.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -83,9 +71,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/5.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -100,9 +85,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/6.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -117,9 +99,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/7.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -134,9 +113,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/8.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -151,9 +127,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/9.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -168,9 +141,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/10.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -185,9 +155,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/11.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -202,9 +169,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/12.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -219,9 +183,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/13.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -236,9 +197,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/14.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -253,9 +211,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/15.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -270,9 +225,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/16.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
@@ -287,9 +239,6 @@ databaseChangeLog:
               - column:
                   name: TYPE
                   value: image/jpg
-              - column:
-                  name: CONTENT
-                  valueBlobFile: ../images/list/17.jpg
             schemaName: COFFEE_SHOP
             tableName: IMAGE
             relativeToChangelogFile: true
