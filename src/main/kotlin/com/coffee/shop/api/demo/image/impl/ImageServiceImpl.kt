@@ -16,7 +16,7 @@ class ImageServiceImpl(
     override fun list(id: String): ByteArray {
         return resourceLoader
             .getResource("classpath:/db/changelog/images/list/$id.jpg")
-            .file
+            .inputStream
             .readBytes()
     }
 
@@ -24,6 +24,6 @@ class ImageServiceImpl(
         val resources =
             ResourcePatternUtils.getResourcePatternResolver(resourceLoader)
                 .getResources("classpath:/db/changelog/images/card/$id/*")
-        return Arrays.stream(resources).map { it.file.readBytes() }.collect(Collectors.toList())
+        return Arrays.stream(resources).map { it.inputStream.readBytes() }.collect(Collectors.toList())
     }
 }
