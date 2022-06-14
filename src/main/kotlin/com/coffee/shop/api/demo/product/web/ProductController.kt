@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/products")
-@RequiredArgsConstructor
 @Api(value = "Products view")
 class ProductController(
     private val productService: ProductService
