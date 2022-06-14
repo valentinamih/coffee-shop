@@ -14,6 +14,6 @@ class ProductDto {
     var categoryName: String? = null
     var categoryCode: String? = null
     var propertiesValue: Map<String, String>? = null
-    var listImage: ImageDto? = null
+    var listImages: List<ImageDto>? = null
     var cardImages: List<ImageDto>? = null
 }

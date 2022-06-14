@@ -29,11 +29,11 @@ class Product {
     @PrimaryKeyJoinColumn
     var properties: Properties? = null
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id", referencedColumnName = "product_id")
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "product_id")
     @BatchSize(size = 25)
     @Where(clause = "DESTINATION = 'LIST'")
-    var listImage: Image? = null
+    var listImages: List<Image>? = null
 
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
