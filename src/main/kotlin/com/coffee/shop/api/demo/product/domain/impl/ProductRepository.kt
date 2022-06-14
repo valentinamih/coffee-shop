@@ -40,7 +40,7 @@ interface ProductRepository : PagingAndSortingRepository<Product?, Long?>,
                 }
                 if (filter.colorCode != null) {
                     predicates.add(
-                        cb.equal(product.get<Any>("color").get<Any>("code"), filter.categoryCode)
+                        cb.equal(product.get<Any>("color").get<Any>("code"), filter.colorCode)
                     )
                 }
                 cb.and(*predicates.toTypedArray())
