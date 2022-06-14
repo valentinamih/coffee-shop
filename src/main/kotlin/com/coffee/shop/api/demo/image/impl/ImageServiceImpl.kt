@@ -24,6 +24,13 @@ class ImageServiceImpl(
         val resources =
             ResourcePatternUtils.getResourcePatternResolver(resourceLoader)
                 .getResources("classpath:/db/changelog/images/card/$id/*")
-        return Arrays.stream(resources).map { it.inputStream.readBytes() }.collect(Collectors.toList())
+        return Arrays.stream(resources).map { it.inputStream.readBytes() }
+            .collect(Collectors.toList())
+    }
+
+    override fun card(ids: Array<String>): Map<String, List<ByteArray>> {
+        val result = HashMap<String, List<ByteArray>>()
+        ids.forEach { result[it] = card(it) }
+        return result
     }
 }
