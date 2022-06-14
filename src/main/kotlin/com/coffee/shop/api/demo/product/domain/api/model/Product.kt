@@ -30,7 +30,7 @@ class Product {
     var properties: Properties? = null
 
     @OneToOne(fetch = FetchType.LAZY)
-    @PrimaryKeyJoinColumn
+    @JoinColumn(name = "id", referencedColumnName = "product_id")
     @BatchSize(size = 25)
     @Where(clause = "DESTINATION = 'LIST'")
     var listImage: Image? = null
