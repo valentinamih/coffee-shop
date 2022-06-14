@@ -127,10 +127,10 @@ databaseChangeLog:
             commentLineStartsWith: //
             encoding: UTF-8
             file: ../csv/image_card001.csv
-            quotchar: '"'
+            quotchar: ""
             relativeToChangelogFile: true
             schemaName: COFFEE_SHOP
-            separator: ';'
+            separator: ','
             tableName: IMAGE
             usePreparedStatements: false
         - loadData:
@@ -160,9 +160,9 @@ databaseChangeLog:
             commentLineStartsWith: //
             encoding: UTF-8
             file: ../csv/image_list001.csv
-            quotchar: '"'
+            quotchar: ""
             relativeToChangelogFile: true
             schemaName: COFFEE_SHOP
-            separator: ';'
+            separator: ','
             tableName: IMAGE
             usePreparedStatements: false
