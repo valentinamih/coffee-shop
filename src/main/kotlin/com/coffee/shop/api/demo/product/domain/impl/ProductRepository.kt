@@ -38,6 +38,11 @@ interface ProductRepository : PagingAndSortingRepository<Product?, Long?>,
                         cb.equal(product.get<Any>("category").get<Any>("code"), filter.categoryCode)
                     )
                 }
+                if (filter.colorCode != null) {
+                    predicates.add(
+                        cb.equal(product.get<Any>("color").get<Any>("code"), filter.categoryCode)
+                    )
+                }
                 cb.and(*predicates.toTypedArray())
             }
         }
