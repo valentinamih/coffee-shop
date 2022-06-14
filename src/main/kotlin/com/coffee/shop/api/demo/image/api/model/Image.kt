@@ -8,6 +8,6 @@ class Image {
     @Id
     var id: Long? = null
     var type: String? = null
-
+    var name: String? = null
     var destination: String? = null
 }
