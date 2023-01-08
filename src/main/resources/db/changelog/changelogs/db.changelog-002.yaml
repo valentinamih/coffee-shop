@@ -100,3 +100,69 @@ databaseChangeLog:
               separator: ';'
               tableName: PROPERTIES
               usePreparedStatements: false
+        - loadData:
+            catalogName: COFFEE_SHOP
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+              - column:
+                  name: TYPE
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DESTINATION
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: NAME
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: PRODUCT_ID
+                  type: BIGINT
+            commentLineStartsWith: //
+            encoding: UTF-8
+            file: ../csv/image_card001.csv
+            quotchar: ""
+            relativeToChangelogFile: true
+            schemaName: COFFEE_SHOP
+            separator: ','
+            tableName: IMAGE
+            usePreparedStatements: false
+        - loadData:
+            catalogName: COFFEE_SHOP
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+              - column:
+                  name: TYPE
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: DESTINATION
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: NAME
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: PRODUCT_ID
+                  type: BIGINT
+            commentLineStartsWith: //
+            encoding: UTF-8
+            file: ../csv/image_list001.csv
+            quotchar: ""
+            relativeToChangelogFile: true
+            schemaName: COFFEE_SHOP
+            separator: ','
+            tableName: IMAGE
+            usePreparedStatements: false

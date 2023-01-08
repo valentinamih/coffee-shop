@@ -109,6 +109,11 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
+                  name: NAME
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
                   name: PRODUCT_ID
                   type: BIGINT
                   constraints:
